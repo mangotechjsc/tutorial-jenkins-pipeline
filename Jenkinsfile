@@ -3,9 +3,9 @@ pipeline {
   environment {
     FRONTEND_GIT = 'https://github.com/mangotechjsc/tutorial-jenkins-frontend.git'
     FRONTEND_BRANCH = 'master'
-    FRONTEND_IMAGE = 'sontung0/tutorial-jenkins-frontend'
+    FRONTEND_IMAGE = 'mangotechjsc/tutorial-jenkins-frontend'
     FRONTEND_SERVER = '1.2.3.4'
-    FRONTEND_SERVER_DIR = './app'
+    FRONTEND_SERVER_DIR = '../app'
   }
   stages {
     stage('Build JS') {
